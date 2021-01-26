@@ -8,7 +8,6 @@ libprotobuf-dev
 libxdamage1
 libxfixes3
 protobuf-compiler
-protobuf-c-compiler
 zlib1g-dev
 libcairo2
 libcroco3

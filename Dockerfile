@@ -66,7 +66,7 @@ RUN npm install -g yarn && \
 	gem install bundler && \
 	apt update && \
 	apt -y install git libicu-dev libidn11-dev \
-	libpq-dev libprotobuf-dev protobuf-compiler  protobuf-c-compiler
+	libpq-dev libprotobuf-dev protobuf-compiler
 
 COPY Gemfile* package.json yarn.lock /opt/mastodon/
 
