@@ -98,7 +98,7 @@ RUN apt update && \
 	echo "mastodon:`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 24 | mkpasswd -s -m sha-256`" | chpasswd
 
 # Install mastodon runtime deps
-RUN apt -y --no-install-recommends install \
+RUN apt -y  install \
 	  libssl1.1 libpq5 imagemagick ffmpeg \
 	  libicu66 libprotobuf17 libidn11 libyaml-0-2 \
 	  file ca-certificates tzdata libreadline8 && \
